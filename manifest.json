@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Dennin N Bar",
+  "version": "1.0",
+  "description": "Rozsirenie, ktore zmeni hornu listu Dennika N na fixnu...",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.dennikn.sk/*"],
+      "js": ["n-bar.js"],
+      "css" : ["n-bar.css"]
+    }
+  ]
+  
+}
