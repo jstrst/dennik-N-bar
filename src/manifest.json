@@ -1,12 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Dennin N Bar",
+  "name": "Dennik N fixed header",
   "version": "1.0",
   "description": "Rozsirenie, ktore zmeni hornu listu Dennika N na fixnu...",
-
+  "icons": {
+    "128": "fixed128.png",
+    "16": "fixed16.png",
+    "48": "fixed48.png"
+ },
   "content_scripts": [
     {
-      "matches": ["*://*.dennikn.sk/*"],
+      "matches": ["*://www.dennikn.sk/*", "*://dennikn.sk/*", "*://e.dennikn.sk/*"],
       "js": ["n-bar.js"],
       "css" : ["n-bar.css"]
     }
